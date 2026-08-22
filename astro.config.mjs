@@ -1,4 +1,4 @@
-import sitemap from "@astrojs/sitemap";
+﻿import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
@@ -192,7 +192,7 @@ export default defineConfig({
 			rehypeMermaid,
 			rehypeFigure,
 			[rehypeExternalLinks, { siteUrl: siteConfig.site_url }],
-			[rehypeEmailProtection, { method: "base64" }], // 邮箱保护插件，支�?'base64' �?'rot13'
+			[rehypeEmailProtection, { method: "base64" }], // 邮箱保护插件，支�?'base64' �?'rot13'
 			[
 				rehypeComponents,
 				{
@@ -237,7 +237,7 @@ export default defineConfig({
 			minify: "esbuild",
 			esbuildOptions: {
 				minify: true,
-				// 移除 console.log �?debugger
+				// 移除 console.log �?debugger
 				drop: ["console", "debugger"], 
 			},
 			rollupOptions: {
