@@ -38,7 +38,7 @@ import { remarkImageGrid } from "./src/plugins/remark-image-grid.js";
 export default defineConfig({
 	site: siteConfig.site_url,
 
-	base: "/",
+	base: "/Firefly-Blog",
 	trailingSlash: "always",
 
 	// 图像优化配置
@@ -192,7 +192,7 @@ export default defineConfig({
 			rehypeMermaid,
 			rehypeFigure,
 			[rehypeExternalLinks, { siteUrl: siteConfig.site_url }],
-			[rehypeEmailProtection, { method: "base64" }], // 邮箱保护插件，支持 'base64' 或 'rot13'
+			[rehypeEmailProtection, { method: "base64" }], // 邮箱保护插件，支�?'base64' �?'rot13'
 			[
 				rehypeComponents,
 				{
@@ -237,7 +237,7 @@ export default defineConfig({
 			minify: "esbuild",
 			esbuildOptions: {
 				minify: true,
-				// 移除 console.log 和 debugger
+				// 移除 console.log �?debugger
 				drop: ["console", "debugger"], 
 			},
 			rollupOptions: {
